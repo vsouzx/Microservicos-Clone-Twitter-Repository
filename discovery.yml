@@ -1,0 +1,17 @@
+## Configuração Default da Aplicação ##
+server:
+  ## HTTP Server port
+  port: ${eureka.port}
+
+## Config Application
+spring:
+  application:
+    name: discovery
+
+## Eureka - Service Discovery
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
