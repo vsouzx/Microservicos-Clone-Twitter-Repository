@@ -31,10 +31,10 @@ spring:
       idleTimeout: 60000
       maxLifetime: 180000
   jpa:
-    database-platform: ${database.database-platform}
     show-sql: false
     properties:
       hibernate:
+        dialect: ${database.database-platform}
         ddl-auto: update
 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
