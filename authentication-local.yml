@@ -12,7 +12,7 @@ eureka:
 ## Config Database
 database:
   database-platform: org.hibernate.dialect.SQLServerDialect
-  url: jdbc:sqlserver://DESKTOP-H2HOLAK\SUPER SOUZAO;databaseName=twitterclone_dev;useBulkCopyForBatchInsert=true;applicationName=${spring.application.name};encrypt=true;trustServerCertificate=true;
+  url: jdbc:sqlserver://DESKTOP-H2HOLAK\SUPER SOUZAO;databaseName=twitterclone_dev;
   username: abs-sql
   password: 8A5#@h3c
   minimum-idle: 2
