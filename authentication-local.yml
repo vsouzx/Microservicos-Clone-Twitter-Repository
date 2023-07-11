@@ -13,8 +13,8 @@ eureka:
 database:
   database-platform: org.hibernate.dialect.SQLServerDialect
   url: jdbc:sqlserver://DESKTOP-H2HOLAK\SUPER SOUZAO;databaseName=twitterclone_dev;useBulkCopyForBatchInsert=true;applicationName=${spring.application.name};encrypt=true;trustServerCertificate=true;
-  username: abs-sql
-  password: 8A5#@h3c
+  username: twitterclone_admin
+  password: admin123
   minimum-idle: 2
   maximum-pool-size: 3
 

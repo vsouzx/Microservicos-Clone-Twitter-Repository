@@ -5,16 +5,11 @@ server:
 
 ## Eureka - Service Discovery
 eureka:
-  instance:
-    prefer-ip-address: true
-    statusPageUrlPath: http://${server.host}:${server.port}/actuator/info
-    healthCheckUrlPath: http://${server.host}:${server.port}/actuator/health
   client:
     service-url:
       defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
     register-with-eureka: true
-    healthcheck:
-      enabled: true
+    fetch-registry: true
 
 ## Config Application and Database
 spring:
