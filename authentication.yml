@@ -14,7 +14,7 @@ eureka:
 ## Config Application and Database
 spring:
   application:
-    name: abscoreauthentication
+    name: authentication
   datasource:
     url: ${database.url}
     password: ${database.password}

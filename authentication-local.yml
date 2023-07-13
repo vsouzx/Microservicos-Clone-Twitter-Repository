@@ -19,10 +19,10 @@ database:
   maximum-pool-size: 3
 
 ## Config do Redis
-##  redis:
-##    host: localhost
-##    port: 6379
-##    pass: admin123
+redis:
+  host: localhost
+  port: 6379
+  pass: 6#3MxH432%eS9ngj
 
 ## Config Jwt
 security:
