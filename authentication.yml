@@ -31,6 +31,11 @@ spring:
       hibernate:
         dialect: ${database.database-platform}
         ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+    servlet:
+      path: /authentication
 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
