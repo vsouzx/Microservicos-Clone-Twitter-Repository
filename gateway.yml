@@ -30,6 +30,16 @@ spring:
               args:
                 redis-rate-limiter.replenishRate: 200
                 redis-rate-limiter.burstCapacity: 400
+      routes:
+        - id: accounts
+          uri: lb://accounts
+          predicates:
+            - Path=/accounts/**
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 200
+                redis-rate-limiter.burstCapacity: 400
 
 ## Swagger OpenAPI v3 Springdoc ##
 springdoc:
@@ -47,6 +57,8 @@ springdoc:
     urls: # Caminho do 'api-docs' de cada microserviço a ser exibido na lista
       - name: authentication
         url: /authentication/v3/api-docs
+      - name: accounts
+        url: /accounts/v3/api-docs
 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
