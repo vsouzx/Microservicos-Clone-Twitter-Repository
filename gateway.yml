@@ -39,7 +39,7 @@ spring:
               args:
                 redis-rate-limiter.replenishRate: 200
                 redis-rate-limiter.burstCapacity: 400
-        - id: accounts
+        - id: feed
           uri: lb://feed
           predicates:
             - Path=/feed/**
