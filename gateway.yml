@@ -39,6 +39,15 @@ spring:
               args:
                 redis-rate-limiter.replenishRate: 200
                 redis-rate-limiter.burstCapacity: 400
+        - id: accounts
+          uri: lb://feed
+          predicates:
+            - Path=/feed/**
+          filters:
+            - name: RequestRateLimiter
+              args:
+                redis-rate-limiter.replenishRate: 200
+                redis-rate-limiter.burstCapacity: 400
 
 ## Swagger OpenAPI v3 Springdoc ##
 springdoc:
@@ -58,6 +67,8 @@ springdoc:
         url: /authentication/v3/api-docs
       - name: accounts
         url: /accounts/v3/api-docs
+      - name: feed
+        url: /feed/v3/api-docs
 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
