@@ -1,7 +1,7 @@
 ## Configuração Local (Máquina do Desenvolvedor) ##
 server:
   host: localhost
-  port: 8085
+  port: 8086
 
 ## Eureka - Service Discovery
 eureka:
