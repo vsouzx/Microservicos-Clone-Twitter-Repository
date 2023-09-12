@@ -11,8 +11,6 @@ eureka:
     service-url:
       defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
     register-with-eureka: true
-    healthcheck:
-      enabled: true
 
 ## Config Application and Database
 spring:
@@ -29,29 +27,14 @@ spring:
           uri: lb://authentication
           predicates:
             - Path=/authentication/**
-          filters:
-            - name: RequestRateLimiter
-              args:
-                redis-rate-limiter.replenishRate: 200
-                redis-rate-limiter.burstCapacity: 400
         - id: accounts
           uri: lb://accounts
           predicates:
             - Path=/accounts/**
-          filters:
-            - name: RequestRateLimiter
-              args:
-                redis-rate-limiter.replenishRate: 200
-                redis-rate-limiter.burstCapacity: 400
         - id: feed
           uri: lb://feed
           predicates:
             - Path=/feed/**
-          filters:
-            - name: RequestRateLimiter
-              args:
-                redis-rate-limiter.replenishRate: 200
-                redis-rate-limiter.burstCapacity: 400
 
 ## Swagger OpenAPI v3 Springdoc ##
 springdoc:
