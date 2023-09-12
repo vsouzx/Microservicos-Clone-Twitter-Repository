@@ -5,10 +5,14 @@ server:
 
 ## Eureka - Service Discovery
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     service-url:
       defaultZone: http://${eureka.host}:${eureka.port}/${eureka.name}/
     register-with-eureka: true
+    healthcheck:
+      enabled: true
 
 ## Config Application and Database
 spring:
