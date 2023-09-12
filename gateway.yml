@@ -56,13 +56,3 @@ springdoc:
         url: /accounts/v3/api-docs
       - name: feed
         url: /feed/v3/api-docs
-
-## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
-logging:
-  level:
-    root: WARN
-    br.absoftware.abscore_gateway: INFO
-    io.swagger.models.parameters.AbstractSerializableParameter: ERROR
-    org.hibernate.SQL: ERROR
-    org.springframework.cloud.gateway: INFO
-    reactor.netty.http.client: INFO

@@ -37,10 +37,3 @@ spring:
     servlet:
       path: /accounts
 
-## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
-logging:
-  level:
-    root: WARN
-    br.absoftware.abscore_authentication: INFO
-    io.swagger.models.parameters.AbstractSerializableParameter: ERROR
-    org.hibernate.SQL: ERROR

@@ -20,8 +20,3 @@ eureka:
     peer-node-read-timeout-ms: 2000
     peer-node-connect-timeout-ms: 2000
     
-## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
-logging:
-  level:
-    root: WARN
-    br.absoftware.abscore_discovery: TRACE

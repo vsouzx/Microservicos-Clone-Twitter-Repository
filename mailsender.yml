@@ -54,6 +54,7 @@ spring:
           socketFactory:
             port: 465
             class: javax.net.ssl.SSLSocketFactory
+            
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
   level:
