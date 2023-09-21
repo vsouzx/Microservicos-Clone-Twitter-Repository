@@ -35,6 +35,10 @@ spring:
           uri: lb://feed
           predicates:
             - Path=/feed/**
+        - id: notifications
+          uri: lb://notifications
+          predicates:
+            - Path=/notifications/**
 
 ## Swagger OpenAPI v3 Springdoc ##
 springdoc:
@@ -56,3 +60,5 @@ springdoc:
         url: /accounts/v3/api-docs
       - name: feed
         url: /feed/v3/api-docs
+      - name: notifications
+        url: /notifications/v3/api-docs
