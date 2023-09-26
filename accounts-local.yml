@@ -26,6 +26,7 @@ redis:
 
 endpoint:
   notifications: notifications
+  feed: feed
 
 ## Config Jwt
 security:
