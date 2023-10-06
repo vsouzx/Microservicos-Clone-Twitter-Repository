@@ -30,6 +30,7 @@ security:
 
 endpoint:
   account: accounts
+  feed: feed
 
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
