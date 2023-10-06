@@ -39,6 +39,10 @@ spring:
           uri: lb://notifications
           predicates:
             - Path=/notifications/**
+        - id: directmessages
+          uri: lb://directmessages
+          predicates:
+            - Path=/directmessages/**
 
 ## Swagger OpenAPI v3 Springdoc ##
 springdoc:
@@ -62,3 +66,5 @@ springdoc:
         url: /feed/v3/api-docs
       - name: notifications
         url: /notifications/v3/api-docs
+      - name: directmessages
+        url: /directmessages/v3/api-docs
