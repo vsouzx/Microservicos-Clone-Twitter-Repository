@@ -32,6 +32,10 @@ endpoint:
   feed: feed
   account: accounts
 
+swagger:
+  server:
+    url: http://localhost:8888/notifications
+
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
   level:

@@ -32,6 +32,10 @@ endpoint:
   account: accounts
   feed: feed
 
+swagger:
+  server:
+    url: http://localhost:8888/directmessages
+
 ## Logging level can be one of TRACE, DEBUG, INFO, WARN, ERROR, FATAL, OFF.
 logging:
   level:
