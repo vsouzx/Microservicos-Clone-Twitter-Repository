@@ -17,33 +17,6 @@ spring:
   application:
     name: gateway
 
-  ## Routes MS
-  cloud:
-    gateway:
-      metrics:
-        enabled: true
-      routes:
-        - id: authentication
-          uri: lb://authentication
-          predicates:
-            - Path=/authentication/**
-        - id: accounts
-          uri: lb://accounts
-          predicates:
-            - Path=/accounts/**
-        - id: feed
-          uri: lb://feed
-          predicates:
-            - Path=/feed/**
-        - id: notifications
-          uri: lb://notifications
-          predicates:
-            - Path=/notifications/**
-        - id: directmessages
-          uri: lb://directmessages
-          predicates:
-            - Path=/directmessages/**
-
 ## Swagger OpenAPI v3 Springdoc ##
 springdoc:
   webjars:
