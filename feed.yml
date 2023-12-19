@@ -36,4 +36,8 @@ spring:
       matching-strategy: ant_path_matcher
     servlet:
       path: /feed
+  servlet: 
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
 
