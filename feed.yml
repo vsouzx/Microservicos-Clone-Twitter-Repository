@@ -42,4 +42,5 @@ spring:
       max-request-size: 2MB
   cache:
     type: redis
+    cache-names: exploredTweetsCache
 
